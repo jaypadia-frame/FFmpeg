@@ -1091,6 +1091,14 @@ static const AVCodecDescriptor codec_descriptors[] = {
         .profiles  = NULL_IF_CONFIG_SMALL(ff_prores_profiles),
     },
     {
+        .id        = AV_CODEC_ID_APPLE_PRORES,
+        .type      = AVMEDIA_TYPE_VIDEO,
+        .name      = "apple_prores",
+        .long_name = NULL_IF_CONFIG_SMALL("Apple ProRes (native)"),
+        .props     = AV_CODEC_PROP_INTRA_ONLY | AV_CODEC_PROP_LOSSY,
+        .profiles  = NULL_IF_CONFIG_SMALL(ff_prores_profiles),
+    },
+    {
         .id        = AV_CODEC_ID_JV,
         .type      = AVMEDIA_TYPE_VIDEO,
         .name      = "jv",

@@ -749,6 +749,7 @@ extern const FFCodec ff_adpcm_ima_qt_at_decoder;
 extern const FFCodec ff_alac_at_encoder;
 extern const FFCodec ff_alac_at_decoder;
 extern const FFCodec ff_amr_nb_at_decoder;
+extern const FFCodec ff_apple_prores_decoder;
 extern const FFCodec ff_eac3_at_decoder;
 extern const FFCodec ff_gsm_ms_at_decoder;
 extern const FFCodec ff_ilbc_at_encoder;
