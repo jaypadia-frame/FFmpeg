@@ -264,7 +264,6 @@ extern const FFCodec ff_png_decoder;
 extern const FFCodec ff_ppm_encoder;
 extern const FFCodec ff_ppm_decoder;
 extern const FFCodec ff_prores_encoder;
-extern const FFCodec ff_prores_decoder;
 extern const FFCodec ff_prores_aw_encoder;
 extern const FFCodec ff_prores_ks_encoder;
 extern const FFCodec ff_prosumer_decoder;
@@ -765,6 +764,7 @@ extern const FFCodec ff_libopenjpeg_encoder;
 extern const FFCodec ff_libopenjpeg_decoder;
 extern const FFCodec ff_libopus_encoder;
 extern const FFCodec ff_libopus_decoder;
+extern const FFCodec ff_libproresdecoder_decoder;
 extern const FFCodec ff_librav1e_encoder;
 extern const FFCodec ff_librsvg_decoder;
 extern const FFCodec ff_libshine_encoder;
@@ -862,6 +862,9 @@ extern const FFCodec ff_vp9_mediacodec_decoder;
 extern const FFCodec ff_vp9_qsv_decoder;
 extern const FFCodec ff_vp9_vaapi_encoder;
 extern const FFCodec ff_vp9_qsv_encoder;
+
+// internal codecs reduced priority over external libraries
+extern const FFCodec ff_prores_decoder;
 
 // The iterate API is not usable with ossfuzz due to the excessive size of binaries created
 #if CONFIG_OSSFUZZ

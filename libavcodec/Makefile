@@ -19,6 +19,7 @@ HEADERS = ac3_parser.h                                                  \
           jni.h                                                         \
           mediacodec.h                                                  \
           packet.h                                                      \
+          libproresdecoder.h                                                     \
           qsv.h                                                         \
           vdpau.h                                                       \
           version.h                                                     \
@@ -53,6 +54,7 @@ OBJS = ac3_parser.o                                                     \
        parser.o                                                         \
        parsers.o                                                        \
        profiles.o                                                       \
+       libproresdecoder.o                                                        \
        qsv_api.o                                                        \
        raw.o                                                            \
        utils.o                                                          \
@@ -1083,6 +1085,7 @@ OBJS-$(CONFIG_LIBOPUS_DECODER)            += libopusdec.o libopus.o     \
                                              vorbis_data.o
 OBJS-$(CONFIG_LIBOPUS_ENCODER)            += libopusenc.o libopus.o     \
                                              vorbis_data.o
+OBJS-$(CONFIG_LIBPRORESDECODER)           += libproresdecoder.o
 OBJS-$(CONFIG_LIBRAV1E_ENCODER)           += librav1e.o
 OBJS-$(CONFIG_LIBSHINE_ENCODER)           += libshine.o
 OBJS-$(CONFIG_LIBSPEEX_DECODER)           += libspeexdec.o
